@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <nav class="navbar">
+        <div class="navbar__center">
+            <div class="navbar__logo--container">
+                <h2 class="navbar__logo">company</h2>
+                <span class="nav__logo--truck">
+                    <i class="fa-solid fa-truck-plane"></i>
+                </span>
+            </div>
+
+            <span class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <ul class="nav__links">
+            <li class="nav__list"><a class="nav__link" href="#">
+                    home
+                </a>
+            </li>
+            <li class="nav__list"><a class="nav__link" href="#">
+                    about
+                </a>
+            </li>
+            <li class="nav__list"><a class="nav__link" href="#">
+                    company
+                </a>
+            </li>
+            <li class="nav__list"><a class="nav__link" href="#">
+                    tours
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <img src="1.jpg" alt=""> -->
+</body>
+<script>
+    const navToggle = document.querySelector(".nav__toggle");
+    const navLinks = document.querySelector(".nav__links");
+    navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show__links");
+    });
+</script>
+
+</html>

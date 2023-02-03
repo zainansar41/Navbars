@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slidebar ul li{
+    list-style: none;
+    padding-top: 20%;
+
+}
+.slidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+.slidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.slidebar header h4{
+    color: white;
+    font-size: 1.7em;
+    align-items: center;
+    justify-content: center;
+    padding-left: 47px;
+    line-height: 60px;
+
+}
+.slidebar ul{
+    margin: 25%;
+}
+.slidebar ul li a:hover{
+    margin-left: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: .4s;
+}
+
+#check{
+    display: none;
+}
+label #btn,
+label #cancel{
+    position: absolute;
+    cursor: pointer; 
+    background: #042331;  
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 24px;
+    color: white;
+    padding: 6px 8px;
+    transition: all .5s;
+}
+label #cancel{
+    left: -195px;
+    top:17px;
+    z-index: 1111;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~.slidebar{
+    left: 0; 
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none; 
+}
+#check:checked ~ label #cancel{
+    left: 195px; 
+}
+section{
+    background: url('1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
